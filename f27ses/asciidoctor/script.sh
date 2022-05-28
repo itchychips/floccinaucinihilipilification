@@ -27,6 +27,6 @@ log "=== Dot-sourcing ~/.bashrc for PATH updates" &&
 
 log "== Installing asciidoctor" &&
 gem install asciidoctor &&
-log "=== Done" && 
+log "=== Done" &&
 log "You should be able to use asciidoctor now." &&
 build_adoc

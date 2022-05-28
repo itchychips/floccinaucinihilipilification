@@ -32,7 +32,7 @@ install_packages unzip &&
 
 log "=== Updating nvm submodule" &&
 git submodule update nvm &&
-log "=== Dot-source nvm/nvm.sh" && 
+log "=== Dot-source nvm/nvm.sh" &&
 . nvm/nvm.sh &&
 log "=== Installing and using latest node version via nvm" &&
 nvm install node &&
