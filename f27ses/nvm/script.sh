@@ -23,13 +23,13 @@
 NVM_INSTALL_DIR="$HOME/.nvm"
 NVM_BASHRC_LINES=(
 'export NVM_DIR="$HOME/.nvm"'
-'[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm'
-'[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion'
+'[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm'
+'[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion'
 )
 
 reset_log &&
 
-log "=== Installing nvm" &&
+log "== Installing nvm" &&
 if [ -d "$NVM_INSTALL_DIR" ] && [ ! -d "$NVM_INSTALL_DIR/.git" ]; then
     log "ERROR: '$NVM_INSTALL_DIR' is not a git repository.  Cowardly refusing to continue." &&
     log "ACTION: Remove or move '$NVM_INSTALL_DIR' and re-run this script." &&

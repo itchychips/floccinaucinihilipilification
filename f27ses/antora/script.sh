@@ -26,17 +26,19 @@ DOCS_SITE_DIR="docs-site"
 #https://github.com/nvm-sh/nvm.git
 #git submodule add https://github.com/nvm-sh/nvm.git
 
-log "== Installing Antora" &&
+log "== Prerequisites"
 
+# Needed by nvm.
 install_packages unzip &&
 
-log "=== Updating nvm submodule" &&
-git submodule update nvm &&
-log "=== Dot-source nvm/nvm.sh" &&
-. nvm/nvm.sh &&
-log "=== Installing and using latest node version via nvm" &&
+../nvm/script.sh &&
+. ~/.bashrc &&
+# For some reason dot-sourcing ~/.bashrc doesn't expose nvm command.
+. ~/.nvm/nvm.sh &&
 nvm install node &&
 nvm use node &&
+
+log "== Installing Antora" &&
 log "=== Creating and changing into directory '$DOCS_SITE_DIR'" &&
 mkdir -p "$DOCS_SITE_DIR" &&
 pushd "$DOCS_SITE_DIR" &&
