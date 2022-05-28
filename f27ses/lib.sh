@@ -49,3 +49,14 @@ function build_adoc() {
     fi
 }
 
+function ensure_bashrc_path_prepend() {
+    local path_line="$(printf 'export PATH="%s:$PATH"' "$1")"
+
+    if grep -Fqx "$path_line"; then
+        log "'$path_line' already in ~/.bashrc" &&
+        return 0
+    fi
+
+    log "Adding '$path_line' to ~/.bashrc" &&
+    printf '%s\n' "$path_line"
+}
