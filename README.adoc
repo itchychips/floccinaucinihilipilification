@@ -1,0 +1,25 @@
+= README
+
+== Basic concept
+
+Start with a platform (like msys2, cygwin, or a POSIX environment), and have a
+fully automated build from start to finish of various software.
+
+Currently just bash scripts.  footnote:[And only bash scripts.  More shell
+scripts may come later, but my plan is to target msys2 to start with.]
+
+== Naming
+
+Longer is better sometimes.footnote:[Certainly not always true]footnote:[idk,
+I'm not an astronaut]footnote:[footnote]  Also, to a lot of people, it's
+probably worthless.
+
+Otherwise just call is f27s.
+
+== Licensing
+
+No license yet, which means all rights reserved.  Thanks, capitalism!
+
+If you have a contribution you want to add, I'll license it under an approved
+OSI license.  I just can't be bothered right now, but you do have my permission
+to take any actions to merely to install things.

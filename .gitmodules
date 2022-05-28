@@ -1,0 +1,3 @@
+[submodule "f27ses/antora/nvm"]
+	path = f27ses/antora/nvm
+	url = https://github.com/nvm-sh/nvm.git
