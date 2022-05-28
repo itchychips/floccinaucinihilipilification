@@ -29,7 +29,7 @@ NVM_BASHRC_LINES=(
 
 reset_log &&
 
-log "== Installing nvm" &&
+log "=== Installing nvm" &&
 if [ -d "$NVM_INSTALL_DIR" ] && [ ! -d "$NVM_INSTALL_DIR/.git" ]; then
     log "ERROR: '$NVM_INSTALL_DIR' is not a git repository.  Cowardly refusing to continue." &&
     log "ACTION: Remove or move '$NVM_INSTALL_DIR' and re-run this script." &&
@@ -56,5 +56,6 @@ for line in "${NVM_BASHRC_LINES[@]}"; do
     fi
 done &&
 
-log "== Done"
-log "Do '~/.bashrc' now to use in current shell."
+log "=== Done" &&
+log "Do '~/.bashrc' now to use in current shell." &&
+build_adoc
