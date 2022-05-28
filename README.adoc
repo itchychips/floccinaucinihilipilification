@@ -1,4 +1,14 @@
+// Copyright 2022, Donny Johnson
+//
+// This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+// International License.  See: http://creativecommons.org/licenses/by-sa/4.0/
+
 = README
+
+.This work is licensed under a http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License]
+[link=http://creativecommons.org/licenses/by-sa/4.0/]
+[caption=]
+image::https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License (CC-BY-SA)]
 
 == Basic concept
 
@@ -16,10 +26,19 @@ probably worthless.
 
 Otherwise just call is f27s.
 
+== Conventions
+
+All f27ses footnote:pkg[install automation] have a script.sh that you run in
+that current directory.  All f27ses footnote:pkg[] will output to an
+install.log.adoc, which should be able to be built using `asciidoctor -d book
+install.log.adoc` footnote:[which will have an  for fancy reading.
+
 == Licensing
 
-No license yet, which means all rights reserved.  Thanks, capitalism!
+This project's code is AGPL-3.0.  See xref:COPYING.txt[] for the license that
+governs code within this project.
 
-If you have a contribution you want to add, I'll license it under an approved
-OSI license.  I just can't be bothered right now, but you do have my permission
-to take any actions to merely to install things.
+This project's documentation is CC-BY-SA.  See xref:COPYING-DOC.txt[] for the
+license that governs documentation wtihin this project.
+
+Headers will generally identify which license a file is governed under.

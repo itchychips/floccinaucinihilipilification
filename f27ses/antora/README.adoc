@@ -1,4 +1,14 @@
-= Antora README
+// Copyright 2022, Donny Johnson
+//
+// This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+// International License.  See: http://creativecommons.org/licenses/by-sa/4.0/
+
+= Antora f27s README
+
+.This work is licensed under a http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License]
+[link=http://creativecommons.org/licenses/by-sa/4.0/]
+[caption=]
+image::https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License (CC-BY-SA)]
 
 == Description
 
